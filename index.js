@@ -26,7 +26,7 @@ const mainQuestion = [
         name: "answer",
         type: "list",
         message: "What would you like to do?",
-        choices: ["View All Employees", "View All Departments", "View All Roles", "Add Employee", "Add Role", "Add Department", "Update Employee Roles", "Update Employee Managers", "View Employees by Manager", "Delete Departments", "Delete Roles", "Delete Employees", "View Totalized Budget of Respective Department", "Quit"]
+        choices: ["View All Employees", "View All Departments", "View All Roles", "Add Employee", "Add Role", "Add Department", "Update Employee Roles", "Delete Departments", "Delete Roles", "Delete Employees", "Quit"]
     }
 ]
 
@@ -56,12 +56,6 @@ function init() {
                 case "Update Employee Roles":
                     updateEmployeeRoles();
                     break;
-                // case "Update Employee Managers":
-                //     updateEmployeeManagers();
-                //     break;
-                // case "View Employees by Manager":
-                //     viewEmployeesByManager();
-                //     break;
                 case "Delete Departments":
                     deleteDepartments();
                     break;
@@ -71,9 +65,6 @@ function init() {
                 case "Delete Employees":
                     deleteEmployees();
                     break;
-                // case "View Totalized Budget of Respective Department":
-                //     viewTotalizedBudget();
-                //     break;
                 default:
                     console.log("Quitting...")
                     connection.end()
